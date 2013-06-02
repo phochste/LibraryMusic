@@ -13,7 +13,8 @@
   	  margin: 60px 0px 0px 55px;
 	  font-family: verdana, geneva, arial, helvetica, sans-serif; 
 	  font-size: 11px; 
-	  background-color: #b3b3b3; 
+          color: #ffffff;
+	  background-color: #000000; 
 	  text-decoration: none; 
 	  font-weight: normal; 
 	  line-height: normal; 
@@ -27,6 +28,8 @@
 
       /* ]]> */
     </style>    
+
+
 <script type="text/javascript">
 var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
 document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
@@ -35,40 +38,23 @@ document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.
 var pageTracker = _gat._getTracker("UA-1002951-2");
 pageTracker._trackPageview();
 </script>
-
   </head>
 
   <body>
-    <div id="content" style="width: 900px;">
-      <div style="width: 600px; float: right;">
+<div>
 <a href="http://lib.ugent.be"><img src="http://search.ugent.be/meercat/assets/images/logo-boekentoren.png" align="left" border="0" style="margin: 5px;"/></a>
-<h3>Ever wondered what <span style="color: #fff">music</span> a library would make?</h3>
+<h3>Ever wondered what <span style="color: #999">music</span> a library would make?</h3>
 <p>
- The <a href="http://www.boekentoren.be">Ghent University Book Tower</a> is 20 stories tall + basements total of 24 floors. Each floor contains thousands of books which can be requested by our patrons. We can map every book request to one note (floor level), and multiple book requests in a time interval to a chord.
+ The <a href="http://www.boekentoren.be">Ghent University Book Tower</a> is 20 stories tall. Each floor contains thousands of books which can be requested by our patrons. We can map every book request to one note (floor level), and multiple book requests in a time interval to a chord.
 
 To find out how this composition would sound like, we were inspired by Andr&eacute; Michelle's famous <a href="http://lab.andre-michelle.com/tonematrix">ToneMatrix</a>. The applet below is a <a href="http://processing.org">Processing</a> implementation of the ToneMatrix.
 
 <span align="right">Feedback: <a href="mailto:patrick.hochstenbach@ugent.be">patrick.hochstenbach@ugent.be</a></span>
 </p>
+</div>
+    <div id="content">
 
-      <p>
-	Version: 3
-        <br>
-	Alt take (guitar): <a href="alt/index.html">Guitar version</a>
-        <br>
-        See also: <a href="v2/index.html">Version 2</a><br>
-      </p>
-      <p>
-      Source code: <a href="libsound3.pde">libsound3</a> or at <a href="https://github.com/phochste/LibraryMusic">GitHub</a>
-      </p>
-      
-      <p>
-	Built with <a href="http://processing.org" title="Processing.org">Processing</a>
-      </p>
-
-
-      </div>
-      <div id="libsound3_container">
+      <div id="libsound2_container">
 
 	<!-- This version plays nicer with older browsers, 
 	     but requires JavaScript to be enabled. 
@@ -78,9 +64,9 @@ To find out how this composition would sound like, we were inspired by Andr&eacu
 	<script type="text/javascript">
 	  /* <![CDATA[ */
 
-	  var attributes = { code:'libsound3.class',
-                             archive: 'libsound3.jar,SoundCipher.jar,core.jar',
-                             width:256, height:613 } ;
+	  var attributes = { code:'libsound2.class',
+                             archive: 'libsound2.jar,SoundCipher.jar,core.jar',
+                             width:805, height:405 } ;
           var parameters = { };
           var version = '1.5';
           deployJava.runApplet(attributes, parameters, version);
@@ -90,13 +76,13 @@ To find out how this composition would sound like, we were inspired by Andr&eacu
         
 	<noscript> <div>
 	  <!--[if !IE]> -->
-	  <object classid="java:libsound3.class" 
+	  <object classid="java:libsound2.class" 
             	  type="application/x-java-applet"
-            	  archive="libsound3.jar,SoundCipher.jar,core.jar"
-            	  width="256" height="613"
+            	  archive="libsound2.jar,SoundCipher.jar,core.jar"
+            	  width="805" height="405"
             	  standby="Loading Processing software..." >
             
-	    <param name="archive" value="libsound3.jar,SoundCipher.jar,core.jar" />
+	    <param name="archive" value="libsound2.jar,SoundCipher.jar,core.jar" />
 	    
 	    <param name="mayscript" value="true" />
 	    <param name="scriptable" value="true" />
@@ -114,11 +100,11 @@ To find out how this composition would sound like, we were inspired by Andr&eacu
 		 http://java.sun.com/javase/6/webnotes/install/jre/autodownload.html -->
 	    <object classid="clsid:8AD9C840-044E-11D1-B3E9-00805F499D93"
 		    codebase="http://java.sun.com/update/1.6.0/jinstall-6u18-windows-i586.cab"
-		    width="256" height="613"
+		    width="805" height="4055"
 		    standby="Loading Processing software..."  >
 	      
-	      <param name="code" value="libsound3" />
-	      <param name="archive" value="libsound3.jar,SoundCipher.jar,core.jar" />
+	      <param name="code" value="libsound2" />
+	      <param name="archive" value="libsound2.jar,SoundCipher.jar,core.jar" />
 	      
 	      <param name="mayscript" value="true" />
 	      <param name="scriptable" value="true" />
@@ -153,6 +139,13 @@ To find out how this composition would sound like, we were inspired by Andr&eacu
 	
       </p>
       
+      <p>
+	Source code: <a href="libsound2.pde">libsound2</a> 
+      </p>
+      
+      <p>
+	Built with <a href="http://processing.org" title="Processing.org">Processing</a>
+      </p>
     </div>
   </body>
 </html>
