@@ -11,6 +11,6 @@ requested call number is mapped to a library floor level.
 We use Ghent Univerity Library as a model: it has 20 floors.
 Each floor is a note on the pentatonic scale. When lending
 requests happen in less then 15 minutes, then this will be
-chord.
+a chord.
 
 Java is required to run the applet in a web browser.
