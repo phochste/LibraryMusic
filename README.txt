@@ -1,3 +1,5 @@
+We migrated to https://codeberg.org/phochste/LibraryMusic
+
 Usage:
 
 appletviewer index.html
